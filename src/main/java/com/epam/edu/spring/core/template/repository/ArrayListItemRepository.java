@@ -2,6 +2,7 @@ package com.epam.edu.spring.core.template.repository;
 
 import com.epam.edu.spring.core.template.entity.Item;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +11,9 @@ import java.util.List;
  * Репозиторий, основанный на классе ArrayList.
  * initialSequence должен браться из application.properties
  */
+@Repository("array")
 public class ArrayListItemRepository extends AbstractRepository<Item> implements ItemRepository {
 
-    //??
     @Value("${initial.sequence}")
     long initialSequence;
 

@@ -1,6 +1,7 @@
 package com.epam.edu.spring.core.template.repository;
 
 import com.epam.edu.spring.core.template.entity.Item;
+import org.springframework.stereotype.Repository;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.Random;
  * Репозиторий, основанный на классе LinkedList.
  * initialSequence должен случайно генерироваться из диапазона от 1 до 100
  */
+@Repository("linked")
 public class LinkedListItemRepository extends AbstractRepository<Item> implements ItemRepository {
 
     long initialSequence = new Random().nextInt(100);
