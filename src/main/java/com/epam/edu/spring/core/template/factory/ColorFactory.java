@@ -6,6 +6,8 @@ import org.springframework.beans.factory.FactoryBean;
 import java.util.Random;
 
 public class ColorFactory implements FactoryBean<Color> {
+@Lazy
+@Component
 
     @Override
     public Color getObject() throws Exception {
