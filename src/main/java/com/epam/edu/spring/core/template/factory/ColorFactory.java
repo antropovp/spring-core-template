@@ -2,6 +2,8 @@ package com.epam.edu.spring.core.template.factory;
 
 import com.epam.edu.spring.core.template.entity.Color;
 import org.springframework.beans.factory.FactoryBean;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
