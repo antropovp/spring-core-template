@@ -1,5 +1,10 @@
 package com.epam.edu.spring.core.template.entity;
 
-public enum Color {
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+@Component
+@Scope("prototype")
+public enum Color {
+    RED, BLUE, WHITE
 }
