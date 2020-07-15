@@ -34,8 +34,7 @@ public class SimpleItemService implements ItemService {
     }
 
     @Autowired
-    // TODO:
-    @Qualifier("${item.repository.implementation}")
+    @Qualifier("itemRepositoryAlias")
     public void setItemRepository(ItemRepository itemRepository) {
         this.itemRepository = itemRepository;
     }
